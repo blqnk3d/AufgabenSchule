@@ -9,6 +9,12 @@ public class KehrwertUngeradeZahlen {
         System.out.println(SummKehrwertRec(6));
     }
 
+    /**
+     * It calculates the sum of the reciprocals of the odd numbers from 1 to n
+     *
+     * @param n the number of terms to be summed
+     * @return The sum of the reciprocals of the odd numbers from 1 to n.
+     */
     public static double summKehrwert(int n) {
         double calk = 0;
         boolean isPlus = true;
@@ -29,6 +35,13 @@ public class KehrwertUngeradeZahlen {
         return calk;
     }
 
+    /**
+     * If n is even, then the function returns the result of the function with n-1. If n is odd, then the function returns
+     * the result of the function with n-1 plus or minus 1/n
+     *
+     * @param n The number of terms to be summed.
+     * @return The sum of the reciprocals of the odd numbers from 1 to n.
+     */
     public static double SummKehrwertRec(double n) {
         if (n <= 0) {
             return 0;
